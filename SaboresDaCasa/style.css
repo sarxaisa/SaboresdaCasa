@@ -19,7 +19,7 @@ color: rgba(155, 37, 37, 0.795);
 display: flex;
 justify-content: center;
 font-family: 'Segoe UI', sans-serif;
-/* margin-top: 70px; */
+
 }
 
 .card-receita{
@@ -31,19 +31,40 @@ justify-content: center;
 
 
 .caixa{
- width: 19%;
+ width: 20%;
  background-color: white;
  align-items: center;
- border-radius: 10px;
+ border-radius: 8px;
  display: inline-block;
- justify-content: center;
+}
+
+.icones {
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-top: auto; /* Empurra os ícones para o final da caixa */
+}
+
+.icone-item {
+display: flex;
+align-items: center; /* Alinha o ícone e o texto */
+}
+
+.icones i {
+margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+font-size: 10px; /* Ajuste o tamanho do ícone */
+}
+
+.icones p {
+margin: 0; /* Remove a margem do parágrafo */
+font-size: 13px; /* Ajuste o tamanho da fonte */
 }
 
 .caixa img{
-width: 100%; /* Ajuste para garantir que 3 cards caibam na mesma linha */
+width: 100%; 
 display: flex;
-padding: 0; /* Remover o padding para a borda envolver a imagem */
-border-top-left-radius: 10px; /* Para arredondar a borda superior esquerda */
+padding: 0; 
+border-top-left-radius: 10px; 
 border-top-right-radius: 10px;
 }
 
@@ -52,32 +73,33 @@ color: brown;
 }
 
 .footer{
-    background-color: rgba(109, 85, 39, 0.973);
-    display: flex;
-    flex-direction: column;
-    height: 80px; /* Limita a altura máxima do footer */   
+background-color: rgba(109, 85, 39, 0.973);
+display: flex;
+flex-direction: column;
+height: 80px; /* Limita a altura máxima do footer */   
 }
 
 footer h4{
-    text-align: center;
-    color: rgb(224, 224, 112);
+text-align: center;
+color: rgb(224, 224, 112);
 }
 
 footer h5{
-    display: flex;
-    font-size: 12px;
-    margin: 0;   
-    color:  rgb(224, 224, 112);
-    margin-left: 80px;
+display: flex;
+font-size: 12px;
+margin: 0;   
+color:  rgb(224, 224, 112);
+margin-left: 80px;
 }
 
 footer h3{
-    display: flex;
-    color:white;
-    font-size: 20px;
-    margin: 0;
-    margin-left: 80px;
+display: flex;
+color:white;
+font-size: 20px;
+margin: 0;
+margin-left: 80px;
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
@@ -160,10 +182,30 @@ footer h5{
     margin-right: 80px;
 }
 
+.icones {
+    display: flex;
+    justify-content: space-around; /* Alinha os ícones à esquerda */
+    gap: 20px; /* Espaçamento entre os ícones e o texto */
+    }
+    
+    .icone-item {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto */
+    }
+    
+    .icones i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    font-size: 9px; /* Ajuste o tamanho do ícone */
+    }
+    
+    .icones p {
+    margin: 0; /* Remove a margem do parágrafo */
+    font-size: 13px; /* Ajuste o tamanho da fonte */
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px){}
